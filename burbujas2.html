@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <title>burbujas</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre"><br>
+            </td>
+            <td>
+                <label for="Cantidad">Cantidad</label>
+                <input type="text" id="Cantidad" name="Cantidad"><br>
+            </td>
+            <td>
+                <label for="Total">Total</label>
+                <input type="text" id="Total" name="Total"><br>
+            </td>
+            <td>
+                <label for="Burbuja">Burbuja</label>
+                <input type="text" id="Burbuja" name="Burbuja"><br>
+            </td>
+            <td>
+                <label for="Tiempo">Tiempo 30:00</label><br>
+                <input type="button" value="iniciar" onclick="agregarFila()">
+                <button id="guardar">Guardar</button>
+            </td>
+        </tr>
+    </table>
+    <table id="info" style="width:25%; text-align:center">
+        <tr>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Burbuja</th>
+            <th>Tiempo</th>
+        </tr>
+    </table>
+    <script id="script" src="script.js"></script>
+</body>
+</html>

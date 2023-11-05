@@ -1,0 +1,94 @@
+/* Estilos generales que aplican a todos los dispositivos */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #ff8080, #8080ff);
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos específicos para dispositivos más pequeños (pantallas de menos de 600px) */
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+    margin: 10px auto;
+    max-width: none;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  /* Ajusta otros estilos según sea necesario para dispositivos más pequeños */
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Asegura que el ancho incluye el relleno y el borde */
+}
+
+input[type="button"], button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+button:hover, input[type="button"]:hover {
+  background-color: #005B7F;
+}
+
+/* Personaliza los colores según tus preferencias */
+tr:nth-child(even) {
+  background-color: #c1e6ff;
+}
+
+tr:nth-child(odd) {
+  background-color: #b3b3cc;
+}
+
+th {
+  background-color: #005B7F;
+  color: white;
+}
+
+td {
+  background-color: #fff;
+}
+
+/* Centrar los cuadros de texto */
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+}
